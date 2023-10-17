@@ -18,7 +18,7 @@ h1{
     display: grid;
     grid-template-areas:'header''header''header''header''header''header''header''header''header''header''header''header'
                         'navigation''navigation''navigation''navigation''navigation''navigation''navigation''navigation''navigation''navigation''navigation''navigation'
-                        'nav''nav''nav''nav''main''main''main''main''main''main''main''main'
+                        'nav''nav''nav''main''main''main''main''main''main''main''main''main'
                         'footer''footer''footer''footer''footer''footer''footer''footer''footer''footer''footer''footer'
                          ;
 }
@@ -34,11 +34,23 @@ h1{
         'footer footer footer footer footer footer';
     } */
 
+img {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: -1;
+    max-width: 80%;
+    /* padding: bottom 2px; */
+    height: auto;
+}
+      
     
 .item1{
-    grid-area:header ;
-    background-color: antiquewhite;
-    text-align: center;
+    grid-area:header;
+    margin-top: 0px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    text-align: left;
     /* font-size: 35px */
 }
 
