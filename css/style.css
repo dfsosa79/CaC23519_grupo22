@@ -58,7 +58,7 @@ h1{
 figure{
     background-image: url("../img/parque2.jpg");
     background-color: bisque;
-    border-radius:  
+    /* border-radius:   */
 }
 
 .nav{
