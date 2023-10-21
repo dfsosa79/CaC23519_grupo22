@@ -2,80 +2,103 @@
 /* para incluir el relleno y el borde en el ancho y el alto de una caja */
 * {
     box-sizing: border-box;
+    margin:0;
+    padding:0;
   }
-
+html{
+    background: rgb(56, 8, 248);
+    height: 100%;
+}
 body{
     font-family: Arial, Helvetica, sans-serif ;
-
+    font-size: 1.2rem;
+    border: 1px;
+    min-height: 100%;
 }
-
-
 h1{
-    color:rgb(100, 237, 92)
-
+    color:rgb(94, 238, 86)
 }
-
+/* celular */
 .grid-container{
     display: grid;
-    grid-template-areas:'header figure figure figure'
-                        'nav main main main'
-                        'nav main main main'
-                        'nav footer footer footer';
-    margin: 30px;
+    gap: 10px;
+    grid-template:
+                'header'  100px
+                'header2' 100px
+                'figure'  550px
+                'navbar'  50px
+                'sidebar' 100px
+                'main'    auto
+                'footer'  50px;
+
+    /* margin: 1rem;
+    padding: 0.5rem; */
 }
-
-
- @media (max-width: 600px) {
-    .grid-container  {
-      grid-template-areas: 'header header header header'
-                           'figure figure figure figure'
-                           'nav nav nav nav '
-                           'main main main main'
-                           'footer footer footer footer';
+/* tablet */
+@media (min-width: 600px) {
+    .grid-container{
+        grid-template: 
+                    'header  figure'550px 
+                    'header2 header2'/*fila*/
+                    'navbar  navbar' 50px
+                    'sidebar main'   auto 
+                    'footer  footer' 50px
+                    /* 100px   auto; */
+                    /*columna*/
     }
 }
-
-   
+/* pcescritorio */
+@media (min-width: 900px) {
+    .grid-container{
+        grid-template: 
+                    'header  header  figure' 200px  /*fila*/
+                    'header2 header2 figure' 200px
+                    'navbar  main    main'   50px
+                    'sidebar main    main'   auto 
+                    'footer  footer  footer' 50px/
+                     150px    auto ;
+                    /*columna*/
+                }
+}
 .header{
     grid-area:header;
-    background-color: rgb(247, 250, 205);
-    margin-top: 150px;
-    padding-bottom: 30px;
-    padding-top: 30px;
-    text-align: left;
-    font-size: 80px;
+    background-color: rgb(247, 248, 231);
 }
+.header2{
+    grid-area: header2;
+    background-color: rgb(221, 149, 235);
+
+}
+
 .figure{
-    grid-area:figure;
+    grid-area: figure;
+    background-color: aqua;
 
-
-.h1{
-    color: aliceblue;
 }
- 
-}
-
-figure{
-    background-image: url("../img/parque2.jpg");
-    background-color: bisque;
-    /* border-radius:   */
-}
-
-.nav{
-    grid-area:nav ;
-    background-color: rgb(200, 216, 53);
+.navbar{
+    grid-area:navbar;
     text-align: left;
-    background-color: rgb(175, 154, 194);
-
+    background-color: rgb(238, 243, 174);
+}
+.sidebar{
+    grid-area:sidebar ;
+    background-color: rgb(240, 193, 193);
 }
 .main{
     grid-area:main ;
-    background-color: rgb(24, 190, 38);
+    background-color: rgb(143, 237, 151);
+    /* height: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem; */
 }
-
 .footer{
     grid-area:footer ;
-    background-color: rgb(38, 143, 248);
+    background-color: rgb(134, 187, 240);
 }
-
-
+img {
+    width: 700px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
