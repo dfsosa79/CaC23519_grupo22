@@ -28,9 +28,9 @@ body{
 a{
     text-decoration: none; 
 }
-#subtitulo{
+/* #subtitulo{
     font-size: 1.5rem;
-}
+} */
 
 /* celular */
 .grid-container{
@@ -40,7 +40,7 @@ a{
                 'header'  120px
                 'header2' 100px
                 'figure'  550px
-                'navbar'  50px
+                'nav'  50px
                 'sidebar' 100px
                 'main'    auto
                 'footer'  50px;
@@ -51,7 +51,7 @@ a{
         grid-template: 
                     'header  figure' 
                     'header2 header2'/*fila*/
-                    'navbar  navbar' 50px
+                    'nav  nav' 50px
                     'sidebar main'   auto 
                     'footer  footer' 50px
                     /* 100px   auto; */
@@ -97,7 +97,7 @@ a{
 
 }
 /* enlacesContacto,buscador */
-.navbar{
+.nav{
     grid-area:navbar;
     text-align: left;
     background-color: rgb(247, 248, 231);
