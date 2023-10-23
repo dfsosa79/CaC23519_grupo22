@@ -128,3 +128,10 @@ img {
     background-repeat: no-repeat;
     background-size: contain;
   }
+.botonResaltado{
+    background: linear-gradient(to bottom, #E9FFC2, #FDFFAE);
+    border: 1px solid #C3EDC0;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px rgb(170, 200, 167);
+}
