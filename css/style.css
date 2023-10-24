@@ -1,7 +1,130 @@
+
+/* para incluir el relleno y el borde en el ancho y el alto de una caja */
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+  }
+html{
+    background: rgb(253, 253, 253);
+    height: 100%;
+}
 body{
-    font-family: Arial, Helvetica, sans-serif ;
+    font-family:'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    border: 1px;
+    min-height: 100%;
+}
+#titulo{
+    color:rgb(93, 234, 86);
+    margin: auto;
+    padding: auto;
+    font-size: 3rem;
+    padding: 50px;
+    margin-top: 100px;
 
 }
-h1{
-    color:rgb(100, 237, 92)
+/* quita subrayado en enlace */
+a{
+    text-decoration: none; 
 }
+#subtitulo{
+    font-size: 1.5rem;
+}
+
+/* celular */
+.grid-container{
+    display: grid;
+    gap: 10px;
+    grid-template:
+                'header'  120px
+                'header2' 100px
+                'figure'  550px
+                'navbar'  50px
+                'sidebar' 100px
+                'main'    auto
+                'footer'  50px;
+}
+/* tablet */
+@media (min-width: 700px) {
+    .grid-container{
+        grid-template: 
+                    'header  figure' 
+                    'header2 header2'/*fila*/
+                    'navbar  navbar' 50px
+                    'sidebar main'   auto 
+                    'footer  footer' 50px
+                    /* 100px   auto; */
+                    /*columna*/
+    }
+    .header2{
+        grid-column: 1/span2;
+    }
+
+}
+/* pcEscritorio */
+@media (min-width: 950px) {
+    .grid-container{
+        grid-template: 
+                    'header  header  figure' 400px  /*fila*/
+                    'header2 header2 header2' 200px
+                    'navbar  main    main'   50px
+                    'sidebar main    main'   auto 
+                    'footer  footer  footer' 50px/
+                     150px    auto ;
+                    /*columna*/
+                }
+    
+
+
+    }
+/* titulo */
+.header{
+    grid-area:header;
+    background-color: rgb(233, 239, 145);
+}
+/* subtitulo */
+.header2{
+    grid-area: header2;
+    background-color: rgb(247, 248, 231);
+    grid-column: 1/span2;
+
+}
+/* imagenBosque */
+.figure{
+    grid-area: figure;
+    background-color: rgb(253, 253, 253);
+
+}
+/* enlacesContacto,buscador */
+.navbar{
+    grid-area:navbar;
+    text-align: left;
+    background-color: rgb(247, 248, 231);
+}
+
+/* listaMenu */
+.sidebar{
+    grid-area:sidebar ;
+    background-color: rgb(247, 248, 231);
+}
+/* contenidoPrincipal */
+.main{
+    grid-area:main ;
+    background-color: rgb(247, 248, 231);
+    /* height: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem; */
+}
+/* pieDePagina */
+.footer{
+    grid-area:footer ;
+    background-color: rgb(247, 248, 231);
+}
+
+img {
+    width: 700px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
