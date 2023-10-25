@@ -3,42 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/ContactStyle.css">
+    <script src="/js/main.js"></script>   
     <title>Contactanos</title>
 </head>
 <body>
 
-    <h3>Contactate con nosotros</h3>
+    <div class="contact">
 
-    <form action="link" method="post" target="_blank">
-        <label for="NombreCompleto">Nombre Completo:</label>
-        <input type="text" name="NombreCompleto" id="NombreCompleto">
 
-        <br>
-        <br>
-        
-        <label for="Email">Dirección de E-mail:</label>
-        <input type="text" name="Email" id="Email">
+        <form action="" method="post" id="form">
+            <div class="form">
+                <h1>Registro</h1>
+                <div class="grupo">
+                    <label for="NombreCompleto">Nombre Completo:</label>
+                    <br>
+                    <input type="text" name="NombreCompleto" id="NombreCompleto">
+                    
+                </div>
 
-        <br>
-        <br>
+                <div class="grupo">
+                    <label for="Email">Dirección de E-mail:</label>
+                    <br>
+                    <input type="email" name="Email" id="Email">
+                   
+                </div>
 
-        <label for="NroTelefono">Número de Teléfono</label>
-        <input type="text" name="NroTelefono" id="NroTelefono">
+                <div class="grupo">
+                    <label for="NroTelefono">Número de Teléfono</label>
+                    <br>
+                    <input type="text" name="NroTelefono" id="NroTelefono">
+                    
+                </div>
 
-        <br>
-        <br>
+                <div class="grupo">
+                    <label for="Comentarios">Comentarios</label>
+                    <br>
+                    <input type="text" name="Comentarios" id="Comentarios">
+                    
+                </div>
 
-        <label for="Comentarios">Dejanos tus comentarios</label>
-        <input type="text" name="Comentarios" id="Comentarios">
+                <button type="submit">Enviar Datos</button>
+            
+            
 
-        <br>
-        <br>
-        
- 
-        <input type="reset" value="Limpiar Datos">
-        <input type="submit" value="Enviar Comentario">
+            </div>
+    
+        </form>
 
-    </form>
+    </div>
     
 </body>
 </html>
