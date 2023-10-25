@@ -99,6 +99,8 @@ header{
     border-radius: 15px;
     padding: 0 25px 25px;
     align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
   }
  
 
@@ -192,4 +194,8 @@ li{
   .my-button:active {
     background-color: #3e8e41;
   }
+
+  ul {
+    list-style: none;
+}
 
