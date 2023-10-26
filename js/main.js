@@ -18,13 +18,3 @@ const EMail = document.getElementById("Email")
 const NroTelefono = document.getElementById("NroTelefono")
 const Comentarios = document.getElementById("Comentarios")
 const Form = document.getElementById("form")
-
-Form.addEventListener("submit",e=>{
-    e.preventDefault()
-    let warnings = ""
-    if(Nombre.ariaValueMax.length < 3){
-        warnings += `El nombre no es válido <br>`}
-})
-
-
-
