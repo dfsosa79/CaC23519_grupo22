@@ -78,11 +78,32 @@ a{
 
     }
 /* titulo */
-.header{
+
+header{
     grid-area:header; 
     margin: 20px;  
     /* background-color: rgb(230, 245, 195); */
+    background-image: url("../img/parque2.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 0;
 }
+
+.header-box{
+    color: #fff;
+    background-color: rgba(0,0,0,.75);
+    border-radius: 15px;
+    padding: 0 25px 25px;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+ 
+
 /* subtitulo */
 .header2{
     grid-area: header2;
@@ -157,4 +178,19 @@ li{
     margin: 20px 50px 20px 40px;
 
 }
-
+.my-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .my-button:hover {
+    background-color: #45a049;
+  }
+  
+  .my-button:active {
+    background-color: #3e8e41;
+  }
