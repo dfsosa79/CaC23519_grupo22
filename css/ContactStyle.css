@@ -79,6 +79,7 @@ label{
     pointer-events: none;
 }
 
+
 input:focus~label,
 input:valid~label{
     top: -14px;
@@ -86,6 +87,8 @@ input:valid~label{
     color: #2196f3;
 
 }
+
+
 
 .barra{
     position: relative;
@@ -134,7 +137,7 @@ button{
 
 
 
-.Validacion{
+.warnings{
 
     width: 200px;
     text-align: center;
