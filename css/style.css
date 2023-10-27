@@ -17,12 +17,13 @@ body{
     box-shadow: 1px 1px 2px 3px rgb(187, 189, 187);
 }
 .li2 {
+    display: block;
     list-style-type: none;
+    text-align: center;
     margin: 0;
-    padding: 0;
+    padding: 2%;
     overflow: hidden;
     background-color: #a7da31;
-  
     
   }
 .li1{
@@ -43,21 +44,19 @@ a{
 h4{
     color:#40394A;
     font-size: 1.4rem;
-    margin-top: 6%;
-    margin-bottom: 4%;
-    margin:3%;
+    margin-left: 3%;
+    margin-top: 2%;
+
 }
 h3{
     color:#40394A;
     font-size: 1.1rem;
-    margin-top: 6%;
-    margin-bottom: 4%;
-    margin:3%;
-    
+    margin-left: 3%;  
+    margin-top: 2%;  
 }
 p{
     font-size: 1rem;
-    margin:3%;
+    margin-left: 3%;
 }
 
 /* celular */
@@ -93,10 +92,11 @@ p{
     padding: 30% 10%;
 
 }
-img{
-    margin:0.5%;
-    margin-left: 1%;
-
+div{
+    text-align: center;
+    margin-right:2%;
+    margin-top: 3%;
+    margin-bottom: 5%;
 }
 /* enlacesContacto,buscador */
 .nav{
@@ -224,10 +224,7 @@ img{
         background-color: #a8d63f;
         font-size: 1rem;
     }
-    h3{
-        margin-top: 3%;
-        margin-bottom: 1%;
-    }
+
     
     .header2{
         grid-column: 1/span2;
