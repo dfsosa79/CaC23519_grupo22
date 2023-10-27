@@ -118,6 +118,8 @@ div{
     grid-area:main ;
     background-color: rgb(247, 248, 231);
 
+
+
 }
 /* pieDePagina */
 .footer{
@@ -381,10 +383,10 @@ div{
         font-size: 3.7rem;
         margin-top: 3%;
     }
-
     .sidebar{
         grid-area:sidebar ;
         padding: 2%;
+        width:180px;
     }
     .figure{
         grid-area: figure;
