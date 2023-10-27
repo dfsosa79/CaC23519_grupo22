@@ -28,14 +28,36 @@ let Parque = {
 
 */
 
+// Crear objetos para manipular los elementos del document
+
 const ccform = document.getElementById("cform")
 const ccnombre = document.getElementById("cname")
+const ccparrafo = document.getElementById("warnings")
+const cctelefono = document.getElementById("ctelefono")
 
+
+// Crear un evento "submit" para programa el click en el botón Enviar Datos
+//    se hace en el submit del form (por el tipo de boton)
 
 ccform.addEventListener("submit", e=>{
     e.preventDefault()
-    let warnings = "Hola"
+    let warnings = ""
+    ccparrafo.innerHTML = warnings
     if(ccnombre.value.length  < 6){
-        alert("Nombre corto")
+        warnings += `El nombre no es válido <br>`
     }
-})
+
+    if(isNaN(cctelefono.value)){
+        warnings += `El número de teléfono no es válido <br>`
+    }
+
+    if(warnings.length > 0){
+        ccparrafo.innerHTML = warnings
+    }else
+        {
+            alert("Datos enviados!!!!!")
+            window.close()
+        }
+    }
+)
+
