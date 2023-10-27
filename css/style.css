@@ -17,12 +17,13 @@ body{
     box-shadow: 1px 1px 2px 3px rgb(187, 189, 187);
 }
 .li2 {
+    display: block;
     list-style-type: none;
+    text-align: center;
     margin: 0;
-    padding: 0;
+    padding: 2%;
     overflow: hidden;
     background-color: #a7da31;
-  
     
   }
 .li1{
@@ -43,21 +44,29 @@ a{
 h4{
     color:#40394A;
     font-size: 1.4rem;
-    margin-top: 6%;
-    margin-bottom: 4%;
-    margin:3%;
+    margin-left: 3%;
+    margin-top: 2%;
+
 }
 h3{
     color:#40394A;
     font-size: 1.1rem;
-    margin-top: 6%;
-    margin-bottom: 4%;
-    margin:3%;
-    
+    margin-left: 3%;  
+    margin-top: 2%;  
 }
 p{
     font-size: 1rem;
-    margin:3%;
+    margin-left: 3%;
+    text-align: justify;
+    margin-right: 2%;
+}
+.volver{
+    display: block;
+    color: brown;
+    text-align: right;
+    margin-right: 3%;
+    font-size:large;
+
 }
 
 /* celular */
@@ -93,10 +102,11 @@ p{
     padding: 30% 10%;
 
 }
-img{
-    margin:0.5%;
-    margin-left: 1%;
-
+div{
+    text-align: center;
+    margin-right:2%;
+    margin-top: 3%;
+    margin-bottom: 5%;
 }
 /* enlacesContacto,buscador */
 .nav{
@@ -118,12 +128,16 @@ img{
     grid-area:main ;
     background-color: rgb(247, 248, 231);
 
+
+
 }
 /* pieDePagina */
 .footer{
     grid-area:footer;
     text-align: center;
-    margin: 3%;
+    margin-bottom: 1%;
+    margin-right: 1%;
+    background-color: rgb(247, 248, 231);
 }
 
 .subtitulo{
@@ -141,6 +155,12 @@ img{
     border: none;
     /* box-shadow: 2px 2px 4px 2px rgb(170, 200, 167); */
     cursor: pointer;
+  }
+  .my-button1 {
+    padding: 2% 3%;
+    background-color: #a8d63f;
+    color: white;
+    border: none;
   }
   .button-contact{
     padding: 1% 2%;
@@ -224,10 +244,7 @@ img{
         background-color: #a8d63f;
         font-size: 1rem;
     }
-    h3{
-        margin-top: 3%;
-        margin-bottom: 1%;
-    }
+
     
     .header2{
         grid-column: 1/span2;
@@ -384,10 +401,10 @@ img{
         font-size: 3.7rem;
         margin-top: 3%;
     }
-
     .sidebar{
         grid-area:sidebar ;
         padding: 2%;
+        width:180px;
     }
     .figure{
         grid-area: figure;
@@ -471,5 +488,10 @@ img{
         left:-5%;
         top: 45%;
     }
+    div{
+        text-align: center;
+        margin: 1% 3% 5% 3%;
+    }
+    
 
 }
