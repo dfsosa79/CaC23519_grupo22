@@ -16,6 +16,7 @@ body{
     margin: auto;
     box-shadow: 1px 1px 2px 3px rgb(187, 189, 187);
 }
+/* listas */
 .li2 {
     display: block;
     list-style-type: none;
@@ -30,7 +31,7 @@ body{
     display: inline;
 }
 
-
+/* titulo */
 #titulo{
     color:#40394A;
     padding: 10px;
@@ -41,6 +42,7 @@ body{
 a{
     text-decoration: none; 
 }
+/* titulos, subtitulos y parrafos en main */
 h4{
     color:#40394A;
     font-size: 1.4rem;
@@ -60,6 +62,7 @@ p{
     text-align: justify;
     margin-right: 2%;
 }
+/* enlace volver */
 .volver{
     display: block;
     color: brown;
@@ -102,13 +105,14 @@ p{
     padding: 30% 10%;
 
 }
+/* imagenes parques */
 div{
     text-align: center;
     margin-right:2%;
     margin-top: 3%;
     margin-bottom: 5%;
 }
-/* enlacesContacto,buscador */
+/* enlacesContacto, home, login */
 .nav{
     grid-area:nav;
     padding-top: 2%;
@@ -128,26 +132,22 @@ div{
     grid-area:main ;
     background-color: rgb(247, 248, 231);
 
-
-
 }
 /* pieDePagina */
 .footer{
     grid-area:footer;
-    text-align: center;
     margin-bottom: 1%;
     margin-right: 1%;
-    background-color: rgb(247, 248, 231);
+    margin-top: 1%;
 }
-
+/* subtitulo */
 .subtitulo{
     font-size: 1rem;
     color: #AAC8A7;
     margin-left: 1%;
-    padding: 2%;
-    
+    padding: 2%;  
 }
-
+/* botones menuy nav */
 .my-button {
     padding: 2% 3%;
     background-color: #a8d63f;
@@ -180,7 +180,7 @@ div{
     background-color: #3e8e41;
   }
 
-
+/* Resolucion 420 */
 @media (min-width: 420px) {
     .grid-container{
         grid-template: 
@@ -226,7 +226,7 @@ div{
 
 
 }
-
+/* Resolucion 650 */
 @media (min-width:650px) {
     .grid-container{
         grid-template: 
@@ -296,6 +296,7 @@ div{
     }
 
 }
+/* Resolucion 800 */
 @media (min-width:800px) {
     .grid-container{
         grid-template: 
@@ -365,6 +366,7 @@ div{
     }
 
 }
+/* Resolucion 1000 */
 @media (min-width:1000px) {
     .grid-container{
         grid-template: 
@@ -433,6 +435,7 @@ div{
     }
 
 }
+/* Resolucion 1200 */
 @media (min-width:1200px) {
     .grid-container{
         grid-template: 
@@ -492,6 +495,7 @@ div{
         text-align: center;
         margin: 1% 3% 5% 3%;
     }
+
     
 
 }
