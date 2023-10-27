@@ -42,12 +42,22 @@ a{
 }
 h4{
     color:#40394A;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     margin-top: 6%;
     margin-bottom: 4%;
+    margin:3%;
+}
+h3{
+    color:#40394A;
+    font-size: 1.1rem;
+    margin-top: 6%;
+    margin-bottom: 4%;
+    margin:3%;
+    
 }
 p{
     font-size: 1rem;
+    margin:3%;
 }
 
 /* celular */
@@ -81,6 +91,11 @@ p{
     background-color: rgba(0,0,0,.75);
     border-radius: 2%;
     padding: 30% 10%;
+
+}
+img{
+    margin:0.5%;
+    margin-left: 1%;
 
 }
 /* enlacesContacto,buscador */
@@ -124,7 +139,7 @@ p{
     background-color: #a8d63f;
     color: white;
     border: none;
-    box-shadow: 2px 2px 4px 2px rgb(170, 200, 167);
+    /* box-shadow: 2px 2px 4px 2px rgb(170, 200, 167); */
     cursor: pointer;
   }
   .button-contact{
@@ -168,11 +183,11 @@ p{
         color:#40394A;
         margin: 10px;
         padding: 10px;
-        font-size: 2rem;
+        font-size: 2.2rem;
         margin-top: 3%;
     }
     .subtitulo{
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         color: #AAC8A7;
         margin-left: 4%;
         padding: 2%;
@@ -181,9 +196,14 @@ p{
         grid-area:sidebar ;
         padding: 1%;
     }
-    h4{
+    h3{
         color:#40394A;
+        font-size: 1.3rem;
     }
+    h4{
+    font-size: 1.6rem;
+    }
+
 
 }
 
@@ -204,7 +224,7 @@ p{
         background-color: #a8d63f;
         font-size: 1rem;
     }
-    h4{
+    h3{
         margin-top: 3%;
         margin-bottom: 1%;
     }
@@ -276,7 +296,7 @@ p{
         background-color: #a8d63f;
         font-size: 1rem;
     }
-    h4{
+    h3{
         color:#40394A;
     }
     .header2{
@@ -345,7 +365,7 @@ p{
         background-color: #a8d63f;
         font-size: 1rem;
     }
-    h4{
+    h3{
         color:#40394A;
     }
     .header2{
